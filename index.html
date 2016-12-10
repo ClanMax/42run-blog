@@ -44,7 +44,11 @@
         <p class="day_text">Во второй половине дня проходят тренировки на силу, а также лекции и дополнительные технические занятия.</p>
         
         <p class="day_text">После ужина никаких тренировок не проводится. Это отличное время чтобы пойти спать или продолжить приятное общение с друзьями за ужином.</p>   
-           <img src="images/6.jpg" alt="Вкусная еда" class="day.src"> 
+          <ul class="rslides">
+           <li><img src="images/6.jpg" alt="Вкусная еда"></li>
+           <li><img src="images/2.jpg" alt="Вкусная еда"></li>
+           <li><img src="images/3.jpg" alt="Бассейн отеля"></li>
+        </ul>
        </div>
     
     
@@ -109,4 +113,12 @@
 </footer>   
     
 </body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
 </html>
