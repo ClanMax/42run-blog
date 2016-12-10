@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,900'|Source Code Pro);
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,900|Source+Code+Pro');
 
 
 body{
-    background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.2), #de7006);
     font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.2), #de7006);
     font-size: 1.07em;
     line-height: 1.45;
 }
@@ -21,23 +22,22 @@ body{
     height: 200px;
 }
 
-.day {
+.warning_border {
     box-shadow:  0 0 15px rgba(0,0,0,0.15);
-    margin-left: -10%;
-    margin-right: -10%;
+    margin: 2% -10% 2% -10%;    
     padding: 5%;
 }
 
 
 .container {
     display: block;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12.500em;
+    margin-right: 12.500em;
     margin-top: 10px;
 }
 
 .post {
-    padding: 10%;
+    padding: 2% 10%;
     border-radius: 10px;
     background: white;
 }
@@ -69,9 +69,6 @@ h2 {
     background: linear-gradient(to bottom, #EBEBEB, #C7C7C3);
 }
 
-.menu_btn {
-
-}
 
 .trainer_src {
     margin-top: 4%;
@@ -97,14 +94,43 @@ h2 {
     padding-left: 15%;
 }
 
-.contact_btn {
-  }
-
-.contact_btn a {
-    
+.aboutus {
+    margin-top: 2em;
+    padding-top: 2.3em;
+    text-align: center;
 }
 
-@media (max-width: 48.75em) {
+h4 {
+    font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+    font-size: 1.4rem;
+    margin: 0 0 0.8rem 0;
+    color: white;
+}
+
+.aboutus_email {
+    font-family: inherit;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.btn_submit {
+    font-size: 100%;
+    padding: 2px 20px;
+    border: 1px solid #D4D4D4;
+    border-color: white;
+    background: rgba(255,255,255,0.2);
+    font-family: inherit;
+    box-shadow: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_submit:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 68.75em) {
     .container {
         margin-left: 2%;
         margin-right: 2%;
