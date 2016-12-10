@@ -3,36 +3,43 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,900|Source+Code+Pro');
+
+
 body{
-    background-color: cornsilk;
+    background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.2), #de7006);
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.07em;
+    line-height: 1.45;
 }
 
 .header{
     display:block;
     position: relative;
     width: 100%;
-    height: 630px;
-    background-image: url(images/1.jpg);
-    background-attachment: fixed;
+    height: 200px;
 }
 
-
-.header_text {
-    width: 300px;
-    height: 60px;
-    margin: 0 auto;
-    text-align: center;
-    text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-    font-size: 2em;
+.day {
+    box-shadow:  0 0 15px rgba(0,0,0,0.15);
+    margin-left: -10%;
+    margin-right: -10%;
+    padding: 5%;
 }
 
 
 .container {
     display: block;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 10px;
+}
+
+.post {
+    padding: 10%;
+    border-radius: 10px;
+    background: white;
 }
 
 img {
@@ -42,23 +49,28 @@ img {
 h2 {
     font-size: 1.4em;
     margin: 10px 0 10px 0;
-    color: #1f8ceb;
+    color: black;
     text-align: center;
 }
 
 .btn {
-    width: 30%;
-    height: 50px;
-    background-color: aqua;
+    font-family: inherit;
+    padding: 5px 8px;
+    font-weight: bold;
+    border: 1px solid #D4D4D4;
+    box-shadow: inset 0 1px 0 #FDFDFC;
+    background:  linear-gradient(to bottom, #F4F4F2, #EDEDEB);
+    color:#444;
     text-decoration: none;
     text-align: center;
 }
 
+.btn:hover {
+    background: linear-gradient(to bottom, #EBEBEB, #C7C7C3);
+}
+
 .menu_btn {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    
+
 }
 
 .trainer_src {
@@ -86,9 +98,15 @@ h2 {
 }
 
 .contact_btn {
-    margin: 0 auto;
-    text-align: center;
-}
+  }
+
 .contact_btn a {
-    text-decoration: none;
+    
+}
+
+@media (max-width: 48.75em) {
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }    
 }
