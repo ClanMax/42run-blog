@@ -68,8 +68,13 @@ a:hover {
 .title {
     display: block;
     color: black;
-    font-size: 3.5rem;
     text-align: center;
+
+}
+
+title_h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 .warning_border {
@@ -111,6 +116,10 @@ h2 {
 
 .btn:hover {
     background: linear-gradient(to bottom, #EBEBEB, #C7C7C3);
+}
+
+.btn:focus {
+    outline: none;
 }
 
 
@@ -228,8 +237,8 @@ h4 {
     */
 }
     
-.title {
-    font-size: 2.2rem;        
+.title_h1 {
+    font-size: 1.5 rem;        
 }
 }
 
