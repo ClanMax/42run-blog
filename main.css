@@ -32,11 +32,10 @@ a:hover {
 
 .main-aside {
     display: flex;
-    padding-top: 0 30px;
 }
 
 .left-column {
-    width: 70%;
+    width: 65%;
 }
 
 .right-column {
