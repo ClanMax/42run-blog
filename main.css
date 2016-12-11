@@ -148,7 +148,7 @@ h4 {
 }
 
 .aboutus_email:focus {
-    border: 1px solid #ccc;
+    outline: none;
 }
 
 .about {
