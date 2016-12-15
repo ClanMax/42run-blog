@@ -12,12 +12,14 @@
        <p class="about_p litte_font">Ах да, на счет звездочки - то от нас не будет спама. Только крутые сообщения о мероприятиях.</p>
     </div> 
     
-    <ul class="footer_block">
+    <div class="footer_block">
+       <ul class="footer_nav">
         <li><a href="<?php echo base_url(); ?>">Главная</a></li>
         <li><a href="http://vk.com/42run">Вконтакте</a></li>
         <li><a href="https://www.instagram.com/oleg.42run.ru/">Инстаграм</a></li>
         <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
     </ul>
+    </div>
 </footer>   
     
 </body>
