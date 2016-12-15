@@ -1,0 +1,5 @@
+Theme name:    42run-blog
+Description:   Special theme for Anchor CMS.
+Author name:   Vlad Meriin  
+Author site:   http://clanmax.ru
+License:       https://www.gnu.org/licenses/gpl-3.0.en.html
