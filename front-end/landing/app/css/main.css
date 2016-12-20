@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&subset=cyrillic');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: arimo, arial, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    padding: 25px 20px 25px 20px;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #757e8e;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background-color: #4175cb;
+}
+
+.block1 {
+    background-color: #e4e7ec;
+    max-width: 1600px;
+    
+    &_img {
+        margin-left: 30px;
+        width: 650px;
+        height: 300px;
+        background: url('../images/img/gloria-sports-arena.jpg') no-repeat;
+        background-size: cover;
+        box-shadow: 0px 0px 10px 0px black;
+    }
+}
+
+.description {
+    max-width: 39%;
+    padding-top: 7%;
+    padding-left: 6%;
+    &_h1{
+        font-size: 29px;
+        line-height: 44px;
+        font-weight: 300;
+    }
+    
+    &_date {
+        padding-bottom: 10px;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 200;
+    }
+    &_about {
+        padding: 10px 0 20px 0;
+    }
+    
+}
+
+
+@media (max-width: 665px ) {
+    .block1 {
+        &_img {
+            display: none;
+        }
+    }
+    
+    .description {
+        max-width: 100%;
+    }
+}

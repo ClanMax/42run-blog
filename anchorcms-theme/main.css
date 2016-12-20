@@ -208,16 +208,19 @@ h4 {
     padding: 0.625em;
     background: #222;
     border-top: 1px solid #F7AA62;
-    text-align: right;
     box-shadow:  0 -4px 3px rgba(0,0,0,0.15);
     line-height: 2;
 }
 
 .footer_nav {
-    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.footer_block a {
+.footer_block li a {
+    display: block;
+    padding: 14px 16px;
     color:white;
     padding-right: 7px;
 }
