@@ -51,6 +51,7 @@ body {
         font-size: 29px;
         line-height: 44px;
         font-weight: 300;
+        color:#586374;
     }
     
     &_date {
@@ -58,11 +59,77 @@ body {
         font-size: 22px;
         line-height: 25px;
         font-weight: 200;
+        color:#586374;
     }
     &_about {
         padding: 10px 0 20px 0;
+        color: #707b8c;
     }
     
+}
+
+.block2 {
+    &_ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 30px;
+    }
+    
+    &_ico {
+        display: block;
+        float: left;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        padding-right: 10px;
+    }
+    
+    &_ico1 {
+        background-image: url('../images/icons/1.svg');
+    }
+    
+    &_ico2 {
+        background-image: url('../images/icons/2.svg');
+    }
+    &_ico3 {
+        background-image: url('../images/icons/3.svg');
+    }
+    &_ico4 {
+        background-image: url('../images/icons/4.svg');
+    }
+    &_ico5 {
+        background-image: url('../images/icons/5.svg');
+    }
+    &_ico6 {
+        background-image: url('../images/icons/6.svg');
+    }
+    &_ico7 {
+        background-image: url('../images/icons/7.svg');
+    }
+    &_ico8 {
+        background-image: url('../images/icons/8.svg');
+    }
+    
+    
+    &_p {
+        padding-left: 50px;
+        color: #707b8c;
+    }
+    
+    &_h3 {
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        color:#586374;
+    }
+    
+    &_block {
+        display: inline-block;
+        width: 250px;
+        margin: 10px 20px 10px 0;
+    }
 }
 
 
