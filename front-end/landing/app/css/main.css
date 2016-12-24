@@ -30,6 +30,31 @@ img {
     max-width: 100%;
 }
 
+.logo {
+    height: 40px;
+    width: 40px;
+    fill: #586374;
+}
+
+.header {
+    max-width: 1600px;
+    padding-top: 1%;
+    padding-left: 7%;
+    background-color: #e4e7ec;
+    
+    &_name {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        color:#586374;
+    }
+    
+    &_name:hover {
+        color: #465263;
+    }
+}
+
 .btn:hover {
     background-color: #4175cb;
 }
@@ -53,7 +78,8 @@ img {
     padding-left: 6%;
     &_h1{
         font-size: 29px;
-        line-height: 44px;
+        line-height: 33px;
+        
         font-weight: 300;
         color:#586374;
     }
