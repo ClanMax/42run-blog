@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+    max-width: 1600px;
     display: flex;
     padding: 25px 20px 25px 20px;
 }
@@ -25,13 +26,16 @@ body {
     font-size: 12px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .btn:hover {
     background-color: #4175cb;
 }
 
 .block1 {
     background-color: #e4e7ec;
-    max-width: 1600px;
     
     &_img {
         margin-left: 30px;
@@ -132,6 +136,44 @@ body {
     }
 }
 
+.block3 {
+    background-color: #e4e7ec;
+    &_about {
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+    }
+    
+    &_h2 {
+        padding-bottom: 10px;
+        font-size: 25px;
+        text-align: center;
+        color: #586374;
+        font-weight: 700;
+    }
+    
+    &_h3 {
+        font-size: 19px;
+        padding-bottom: 10px;
+        color:#586374;
+        text-align: center;
+    }
+    &_text {
+        padding-top: 10px;
+        color: #707b8c;
+        text-align: center;
+    }
+    &_btn {
+        margin-top: 20px;
+    }
+}
+
+.photo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
 
 @media (max-width: 665px ) {
     .block1 {
