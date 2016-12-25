@@ -13,7 +13,8 @@ body {
 .container {
     max-width: 1600px;
     display: flex;
-    padding: 25px 20px 25px 20px;
+    flex-wrap: wrap;
+    padding: 1.5625em 1.25em 1.5625em 1.25em;
 }
 
 .btn {
@@ -54,7 +55,7 @@ img {
         color: #465263;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .header {
         padding-left: 11%;
     }
@@ -111,9 +112,10 @@ img {
         flex-wrap: wrap;
         margin: 0 30px;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 321px) {
         &_ul {
-            margin: 0 10px;
+            padding-left: 15px;
+            margin: 0;
         }
     }
     
@@ -203,6 +205,92 @@ img {
     &_btn {
         margin-top: 20px;
     }
+}
+
+.block4 {
+    &_content {
+        width: 50%;
+    }
+    
+    @media screen and (max-width: 470px) {
+        &_content {
+            width: 100%;
+        }
+    }
+    
+    &_h2 {
+        padding-bottom: 10px;
+        font-size: 25px;
+        color: #586374;
+        font-weight: 700;
+    }
+    
+    
+    &_about {
+        margin: 30px 0 30px 10%;
+    }
+    
+    &_h3 {
+        font-size: 19px;
+        padding-bottom: 10px;
+        color:#586374;
+    }
+    
+    &_li {
+        padding-top: 1%;
+
+        list-style-type: none;
+        color: #707b8c;
+    }
+    
+    
+    &_cost {
+        display: block;
+        width: 60%;
+        background-color: #757e8e;
+        border-radius: 4px;
+        
+        @media screen and (max-width: 470px) {
+            width:100%;
+        }
+        
+        &_p {
+            font-size: 12px;
+            padding: 5px 10px 5px 10px; 
+            text-align: center;
+            color: white;
+        }
+        
+    }
+    
+}
+
+.footer {
+    background-color: #e4e7ec;
+    
+    &_h3 {
+        font-weight: 600;
+        color:#586374;
+    }
+    &_contact {
+        padding-left: 5%;
+        width: 50%;
+    }
+    
+    &_soc {
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+    
+    &_li {
+        display: inline-block;
+    }
+    
+}
+
+.soc {
+    width: 35px;
+    height: 35px;
 }
 
 .photo {

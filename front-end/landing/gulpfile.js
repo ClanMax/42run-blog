@@ -59,7 +59,7 @@ gulp.task('watch', function () {
 
 // clean build
 gulp.task('cleanBuildDir', function (cb) {
-	rimraf('./build', cb);
+	rimraf('build', cb);
 });
 
 
