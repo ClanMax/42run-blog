@@ -3,3 +3,73 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    border:  20px solid #f7f7f7;
+    max-width: 1600px;
+    min-height: 100%;
+    font-size: 16px;
+}
+
+.header {
+    padding: 40px 60px 50px;
+    border-bottom:  1px solid #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    padding: 10px 15px 0 35px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #272b2d;
+}
+
+.logo::before {
+    display: block;
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../i/logo.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+}
+
+.main-menu {
+    &_nav {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &_li {
+        display: inline-block;
+        margin-right: 5px;
+        
+        & a {
+            color: #12acef;
+            outline: none;
+        }
+        
+        & a:hover {
+            color: #0d8ac1;
+            outline: none;
+        }
+    }
+}
+
+.post {
+    display: flex;
+    height: 28vw;
+    
+    &::hober {
+        opacity: 0.8;
+    }
+}
