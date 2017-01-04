@@ -12,6 +12,7 @@ body {
     max-width: 1600px;
     min-height: 100%;
     font-size: 16px;
+    color: #4d5659;
 }
 
 .header {
@@ -23,7 +24,15 @@ a {
     text-decoration: none;
 }
 
+ul, li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -54,6 +63,10 @@ img {
 a, h1,h2,h3 {
     color:#12acef;
     outline: none;
+}
+
+h1,h2,h3 {
+    font-family: "Marmelad", arial, serif;
 }
 
 .main-menu {
@@ -116,5 +129,76 @@ a, h1,h2,h3 {
     
     &:hover {
         opacity: .8;
+    }
+}
+
+
+.footer {
+    display: block;
+    text-align: center;
+    
+    
+    &_social-links {
+        display: block;
+    }
+    
+    &_social-links li {
+        display: inline-block;
+    }
+    
+    &_h3{
+        color: black;
+        font-weight: 200;
+        padding: 40px 0 15px 0;
+    }
+}
+
+.icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #12acef;
+    fill: white;
+    margin-right: 40px;
+    
+    &_vk {
+        background: url("../i/vk.svg") no-repeat; 
+    }
+    
+    &_inst {
+        background: url("../i/instagram.svg") no-repeat; 
+        
+    }
+    
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.posttext {
+    padding: 20px;
+    border-bottom:  1px solid #f7f7f7;
+    
+    &_h3 {
+        color: black;
+        font-size: 30px;
+        padding: 24px 0;
+        font-weight: 500;
+    }
+    
+    &_p {
+        padding: 10px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: lighter;
+    }
+    
+    &_image {
+        width: 100%;
     }
 }
