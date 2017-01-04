@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Marmelad|Roboto');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +8,7 @@
 }
 
 body {
-    border:  20px solid #f7f7f7;
+    font-family: 'Roboto', arial, serif;
     max-width: 1600px;
     min-height: 100%;
     font-size: 16px;
@@ -20,12 +23,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .logo {
     display: inline-block;
     position: relative;
     padding: 10px 15px 0 35px;
-    font-size: 17px;
-    font-weight: 500;
+    font-family: "Marmelad", arial, serif;
+    font-size: 19px;
+    font-weight: ;
     color: #272b2d;
 }
 
@@ -42,6 +51,11 @@ a {
     background-repeat: no-repeat;
 }
 
+a, h1,h2,h3 {
+    color:#12acef;
+    outline: none;
+}
+
 .main-menu {
     &_nav {
         display: inline-block;
@@ -53,10 +67,7 @@ a {
         display: inline-block;
         margin-right: 5px;
         
-        & a {
-            color: #12acef;
-            outline: none;
-        }
+        
         
         & a:hover {
             color: #0d8ac1;
@@ -67,9 +78,43 @@ a {
 
 .post {
     display: flex;
-    height: 28vw;
+    flex-wrap: wrap;
+    padding-left: 6%;
+    border-bottom:  1px solid #f7f7f7;
     
-    &::hober {
-        opacity: 0.8;
+    @media (max-width: 600px) {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    
+    &_image {
+        width: 50%;
+        
+    }
+    
+    &_about {
+        padding: 8% 0 0 30px ;
+    }
+    
+    &_topic {
+        font-family: "Marmelad", arial, serif;
+        font-size: 37px;
+        font-weight: bold;     
+        
+        @media (max-width: 600px) {
+            font-size: 22px;
+        }
+    }
+    
+    &_date {
+        font-style: italic;
+        font-size: 14px;
+        color: black;
+        
+    }
+    
+    &:hover {
+        opacity: .8;
     }
 }
