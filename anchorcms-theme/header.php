@@ -20,11 +20,11 @@
 <header class="header">
         <nav class="main-menu">
             <a href="<?php echo base_url(); ?>" class="logo"><?php echo site_name(); ?></a>
-            <ul class="main-menu_nav">
+            <!-- <ul class="main-menu_nav">
                 <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
                 <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
                 <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
                 <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
-            </ul>
+            </ul> -->
         </nav>
     </header>
