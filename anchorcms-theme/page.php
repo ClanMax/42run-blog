@@ -1,17 +1,9 @@
 <?php theme_include('header'); ?>
-
-		<div class="page-wrap">
-           <div class="main-aside">
-             <main class="left-column">
-			    <h1></h1>
-                <div class="title">
-                    <h1 class="title_h1"><?php echo page_title(); ?>
-                </h1>
-                </div>
-                <div class="post">
-                    <?php echo page_content(); ?>
-                </div>    
-               </main>
-            </div>
+        
+    <article class="posttext">
+        <div class="container">
+             <h3 class="posttext_h3"><?php echo page_title(); ?></h3>
+              <div class="posttext_p"><?php echo page_content(); ?></div>
         </div>
+    </article>
 <?php theme_include('footer'); ?>
