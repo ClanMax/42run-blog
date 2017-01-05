@@ -1,5 +1,9 @@
 <?php theme_include('header'); ?>
 
+
+
+<?php if(has_posts()): ?> 
+<?php $i = 0; while(posts()): $i++; ?>
 <a href="<?php echo article_url(); ?>">
     <article class="post">
         <img src="i/1-post.png" alt=""  class="post_image">
@@ -9,5 +13,8 @@
         </div>
     </article>
     </a>
-
+<?php endwhile; ?>
+<?php else: ?>
+		<p>There are no posts - get to it!</p>
+<?php endif; ?> 
 <?php theme_include('footer'); ?>

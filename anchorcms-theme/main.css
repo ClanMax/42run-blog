@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', arial, serif;
     max-width: 1600px;
     min-height: 100%;
-    font-size: 16px;
+    font-size: 1rem;
     color: #4d5659;
 }
 
@@ -42,7 +42,7 @@ img {
     position: relative;
     padding: 10px 15px 0 35px;
     font-family: "Marmelad", arial, serif;
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: ;
     color: #272b2d;
 }
@@ -55,7 +55,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../i/logo.svg");
+    background-image: url("/blog/themes/42run/i/logo.svg");
     background-size: auto 35px;
     background-repeat: no-repeat;
 }
@@ -69,88 +69,96 @@ h1,h2,h3 {
     font-family: "Marmelad", arial, serif;
 }
 
-.main-menu {
-    &_nav {
-        display: inline-block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    &_li {
-        display: inline-block;
-        margin-right: 5px;
-        
-        
-        
-        & a:hover {
-            color: #0d8ac1;
-            outline: none;
-        }
-    }
+.main-menu_nav {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu_li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.main-menu_li a:hover {
+    color: #0d8ac1;
+    outline: none;
 }
 
 .post {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     padding-left: 6%;
     border-bottom:  1px solid #f7f7f7;
-    
-    @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
+
+
+    .post{
         text-align: center;
         padding-bottom: 15px;
     }
-    
-    
-    &_image {
-        width: 50%;
-        
+}
+
+.post_image {
+    width: 50%;
+}
+
+.post_about {
+    padding: 8% 0 0 30px ;
+}
+
+.post_topic {
+    font-family: "Marmelad", arial, serif;
+    font-size: 2.3125rem;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+
+    .post_topic{
+        font-size: 1.375rem;
     }
-    
-    &_about {
-        padding: 8% 0 0 30px ;
-    }
-    
-    &_topic {
-        font-family: "Marmelad", arial, serif;
-        font-size: 37px;
-        font-weight: bold;     
-        
-        @media (max-width: 600px) {
-            font-size: 22px;
-        }
-    }
-    
-    &_date {
-        font-style: italic;
-        font-size: 14px;
-        color: black;
-        
-    }
-    
-    &:hover {
-        opacity: .8;
-    }
+}
+
+.post_date {
+    font-style: italic;
+    font-size: 0.875rem;
+    color: black;
+}
+
+.post:hover {
+    opacity: .8;
 }
 
 
 .footer {
     display: block;
     text-align: center;
-    
-    
-    &_social-links {
-        display: block;
-    }
-    
-    &_social-links li {
-        display: inline-block;
-    }
-    
-    &_h3{
-        color: black;
-        font-weight: 200;
-        padding: 40px 0 15px 0;
-    }
+}
+
+
+.footer_social-links {
+    display: block;
+}
+
+
+.footer_social-links li {
+    display: inline-block;
+}
+
+
+.footer_h3{
+    color: black;
+    font-weight: 200;
+    padding: 40px 0 15px 0;
 }
 
 .icon {
@@ -160,19 +168,18 @@ h1,h2,h3 {
     background-color: #12acef;
     fill: white;
     margin-right: 40px;
-    
-    &_vk {
-        background: url("../i/vk.svg") no-repeat; 
-    }
-    
-    &_inst {
-        background: url("../i/instagram.svg") no-repeat; 
-        
-    }
-    
-    &:hover {
-        opacity: .9;
-    }
+}
+
+.icon_vk {
+    background: url("/blog/themes/42run/i/vk.svg") no-repeat;
+}
+
+.icon_inst {
+    background: url("/blog/themes/42run/i/instagram.svg") no-repeat;
+}
+
+.icon:hover {
+    opacity: .9;
 }
 
 .container {
@@ -183,22 +190,22 @@ h1,h2,h3 {
 .posttext {
     padding: 20px;
     border-bottom:  1px solid #f7f7f7;
-    
-    &_h3 {
-        color: black;
-        font-size: 30px;
-        padding: 24px 0;
-        font-weight: 500;
-    }
-    
-    &_p {
-        padding: 10px;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: lighter;
-    }
-    
-    &_image {
-        width: 100%;
-    }
+}
+
+.posttext_h3 {
+    color: black;
+    font-size: 1.875rem;
+    padding: 24px 0;
+    font-weight: 500;
+}
+
+.posttext_p {
+    padding: 10px;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.posttext_image {
+    width: 100%;
 }

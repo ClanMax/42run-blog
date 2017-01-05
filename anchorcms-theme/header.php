@@ -17,8 +17,14 @@
 </head>
 <body>
 
-<div class="header">
-        <div class="header_menu">
-            <a href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
-        </div>
-</div> 
+<header class="header">
+        <nav class="main-menu">
+            <a href="<?php echo base_url(); ?>" class="logo"><?php echo site_name(); ?></a>
+            <ul class="main-menu_nav">
+                <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
+                <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
+                <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
+                <li class="main-menu_li"><a href="#" class="main-menu_a">Тест</a></li>
+            </ul>
+        </nav>
+    </header>
