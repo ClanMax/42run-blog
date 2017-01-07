@@ -11,6 +11,7 @@
              <div class="posttext_p">
                   <?php echo page_content(); ?>
             </div>
+            <time class="post_date"><?php echo date('d-m-Y H:i', article_time()); ?></time>
         </div>
     </article>
 <?php theme_include('footer'); ?>

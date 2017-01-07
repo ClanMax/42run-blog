@@ -91,7 +91,7 @@ h1,h2,h3 {
 
 .post {
     border-bottom:  1px solid #f7f7f7;
-
+    padding-bottom: 15px; 
     
     @media (max-width: 600px) {
         
@@ -101,7 +101,7 @@ h1,h2,h3 {
     
     &_image {
         display: block;
-        width: 50%;
+        
         
         @media (max-width: 600px) {
             margin: 0 auto;
@@ -141,6 +141,8 @@ h1,h2,h3 {
     }
     
     &_date {
+        display: block;
+        padding-top: 15px;
         font-style: italic;
         font-size: 14px;
         color: black;
@@ -220,12 +222,12 @@ h1,h2,h3 {
         }
     }
     
-    &p{
+    & p{
         padding-bottom: 15px;
     }
     
     &_p {
-        font-size: 20px;
+        font-size: 15px;
         font-style: normal;
         font-weight: lighter;
     }

@@ -13,7 +13,7 @@
              
         <div class="posttext_p"><?php echo article_markdown(); ?></div>
               
-        <time class="post_date"><?php echo relative_time(article_time()); ?></time>
+        <time class="post_date"><?php echo date('d-m-Y H:i', article_time()); ?></time>
         </div>
     </article>
 <?php endwhile; ?>
