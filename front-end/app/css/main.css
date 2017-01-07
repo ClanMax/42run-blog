@@ -205,14 +205,19 @@ h1,h2,h3 {
 }
 
 .posttext {
-    padding: 20px;
+    
     border-bottom:  1px solid #f7f7f7;
     
     &_h3 {
         color: black;
-        font-size: 30px;
+        font-size: 22px;
         padding: 24px 0;
         font-weight: 500;
+        
+        @media (max-width: 600px) {
+            font-size: 18px;
+        
+        }
     }
     
     &p{
@@ -220,7 +225,6 @@ h1,h2,h3 {
     }
     
     &_p {
-        padding: 10px;
         font-size: 20px;
         font-style: normal;
         font-weight: lighter;
