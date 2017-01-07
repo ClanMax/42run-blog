@@ -6,7 +6,7 @@
              
              <?php if(article_custom_field('post_image', '')!=""): ?>
             <img src="<?php echo article_custom_field('post_image', ''); ?>" alt=""  class="post_image">
-        <?php endif; ?>
+            <?php endif; ?>
             
              <div class="posttext_p">
                   <?php echo page_content(); ?>

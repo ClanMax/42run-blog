@@ -55,7 +55,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/blog/themes/42run/i/logo.svg");
+    background-image: url("../i/logo.svg");
     background-size: auto 35px;
     background-repeat: no-repeat;
 }
@@ -107,11 +107,46 @@ h1,h2,h3 {
 }
 
 .post_image {
+    display: block;
     width: 50%;
+}
+
+@media (max-width: 600px) {
+
+
+    .post_image{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 990px) {
+
+
+    .post_image{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .post_about {
     padding: 8% 0 0 30px ;
+}
+
+@media (max-width: 600px) {
+
+
+    .post_about{
+        padding: 0;
+    }
+}
+
+@media (max-width: 990px) {
+
+
+    .post_about{
+        padding: 0;
+    }
 }
 
 .post_topic {
@@ -125,6 +160,7 @@ h1,h2,h3 {
 
     .post_topic{
         font-size: 1.375rem;
+        text-align: center;
     }
 }
 
@@ -167,15 +203,23 @@ h1,h2,h3 {
     height: 50px;
     background-color: #12acef;
     fill: white;
-    margin-right: 40px;
+}
+
+@media (max-width: 600px) {
+
+
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 .icon_vk {
-    background: url("/blog/themes/42run/i/vk.svg") no-repeat;
+    background: url("../i/vk.svg") no-repeat;
 }
 
 .icon_inst {
-    background: url("/blog/themes/42run/i/instagram.svg") no-repeat;
+    background: url("../i/instagram.svg") no-repeat;
 }
 
 .icon:hover {
@@ -199,6 +243,10 @@ h1,h2,h3 {
     font-weight: 500;
 }
 
+.posttextp{
+    padding-bottom: 15px;
+}
+
 .posttext_p {
     padding: 10px;
     font-size: 1.25rem;
@@ -208,4 +256,9 @@ h1,h2,h3 {
 
 .posttext_image {
     width: 100%;
+}
+
+.posttext_border {
+    padding-bottom: 15px;
+    border-top: 1px solid #f7f7f7;
 }
