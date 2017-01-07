@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    padding: 40px 60px 50px;
+    padding: 10px 50px 10px;
     border-bottom:  1px solid #f7f7f7;
 }
 
@@ -90,14 +90,11 @@ h1,h2,h3 {
 }
 
 .post {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 6%;
     border-bottom:  1px solid #f7f7f7;
 
     
     @media (max-width: 600px) {
-        text-align: center;
+        
         padding-bottom: 15px;
     }
 
@@ -129,12 +126,17 @@ h1,h2,h3 {
     
     &_topic {
         font-family: "Marmelad", arial, serif;
-        font-size: 37px;
-        font-weight: bold;     
+        font-size: 22px;
+        padding: 24px 0;
+        font-weight: 500; 
+        
+        &:hover {
+            text-decoration: underline;
+        }
         
         @media (max-width: 600px) {
-            font-size: 22px;
-            text-align: center;
+            font-size: 18px;
+        
         }
     }
     
@@ -145,9 +147,6 @@ h1,h2,h3 {
         
     }
     
-    &:hover {
-        opacity: .8;
-    }
 }
 
 
@@ -180,7 +179,6 @@ h1,h2,h3 {
     
     
     @media (max-width: 600px) {
-        
         width: 35px;
         height: 35px;
     }
@@ -202,6 +200,8 @@ h1,h2,h3 {
 .container {
     margin: 0 auto;
     max-width: 700px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .posttext {
