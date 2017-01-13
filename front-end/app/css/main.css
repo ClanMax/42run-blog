@@ -197,6 +197,13 @@ h1,h2,h3 {
     &:hover {
         opacity: .9;
     }
+    
+    &_42run {
+        background: url("../i/logo-white.svg") #12acef no-repeat; 
+        background-position: center;
+        background-size: 60%;
+        border-radius: 50%;
+    }
 }
 
 .container {

@@ -2,6 +2,7 @@
        <h3 class="footer_h3">Вы так же можете почитать меня в социальных сетях</h3>
        <div class="footer_social">
             <ul class="footer_social-links">
+		<li><a href="http://42run.ru" class="icon icon_42run" target="_blank"></a></li>
                 <li><a href="https://vk.com/oleg42run" class="icon icon_vk" target="_blank"></a></li>
                 <li><a href="https://www.instagram.com/oleg.42run.ru/" class="icon icon_inst" target="_blank"></a></li>
             </ul>
